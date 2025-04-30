@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Gallery - Brainees Travel Agency</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-gray-50 font-['Roboto'] text-gray-800">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gallery - Brainees Travel Agency</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-blue-100 font-['Roboto'] text-gray-900 min-h-screen bg-[url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80')] bg-cover bg-center">
   <header class="bg-white shadow-md fixed w-full z-10">
     <nav class="container mx-auto flex items-center justify-between p-4">
-      <a href="index.html" class="text-2xl font-bold text-blue-600">Brainees Travel</a>
-      <ul class="hidden md:flex space-x-6 text-lg">
-        <li><a href="index.html" class="hover:text-blue-500 transition">Home</a></li>
-        <li><a href="about.html" class="hover:text-blue-500 transition">About Us</a></li>
-        <li><a href="services.html" class="hover:text-blue-500 transition">Services</a></li>
-        <li><a href="gallery.html" class="hover:text-blue-500 transition font-semibold text-blue-600">Gallery</a></li>
-        <li><a href="contact.html" class="hover:text-blue-500 transition">Contact Us</a></li>
+      <a href="index.html" class="text-3xl font-playfair text-blue-700 flex items-center space-x-2">
+        <i class="fas fa-plane-departure"></i>
+        <span>Brainees Travel</span>
+      </a>
+      <ul class="hidden md:flex space-x-6 text-lg font-semibold text-blue-800">
+        <li><a href="index.html" class="hover:text-blue-600 transition">Home</a></li>
+        <li><a href="about.html" class="hover:text-blue-600 transition">About Us</a></li>
+        <li><a href="services.html" class="hover:text-blue-600 transition">Services</a></li>
+        <li><a href="gallery.html" class="hover:text-blue-600 transition font-semibold text-blue-700">Gallery</a></li>
+        <li><a href="destinations.html" class="hover:text-blue-600 transition">Destinations</a></li>
+        <li><a href="contact.html" class="hover:text-blue-600 transition">Contact Us</a></li>
       </ul>
       <div class="md:hidden">
         <button id="menu-btn" class="text-gray-700 focus:outline-none">
@@ -31,14 +35,15 @@
         <li><a href="about.html" class="block hover:text-blue-500 transition">About Us</a></li>
         <li><a href="services.html" class="block hover:text-blue-500 transition">Services</a></li>
         <li><a href="gallery.html" class="block hover:text-blue-500 transition font-semibold text-blue-600">Gallery</a></li>
+        <li><a href="destinations.html" class="block hover:text-blue-500 transition">Destinations</a></li>
         <li><a href="contact.html" class="block hover:text-blue-500 transition">Contact Us</a></li>
       </ul>
     </div>
   </header>
 
   <main class="pt-20 container mx-auto px-4 py-16">
-    <h1 class="text-4xl font-bold mb-6 text-center">Gallery</h1>
-    <p class="text-center mb-12 max-w-3xl mx-auto">Explore some of the breathtaking destinations and experiences we offer at Brainees Travel Agency.</p>
+    <h1 class="text-5xl font-playfair mb-6 text-center text-blue-800">Gallery</h1>
+    <p class="text-center mb-12 max-w-3xl mx-auto font-semibold">Explore some of the breathtaking destinations and experiences we offer at Brainees Travel Agency.</p>
     <div class="grid md:grid-cols-3 gap-8">
       <div class="rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition">
         <img src="https://images.pexels.com/photos/346885/pexels-photo-346885.jpeg" alt="Beach Destination" class="w-full h-64 object-cover" />
@@ -69,7 +74,7 @@
 
   <footer class="bg-white shadow-inner py-6 mt-12">
     <div class="container mx-auto text-center text-gray-600">
-      &copy; 2024 Brainees Travel Agency. All rights reserved.
+      &copy; 2025 Brainees Travel Agency. All rights reserved.
     </div>
   </footer>
 
