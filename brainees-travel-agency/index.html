@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Brainees Travel Agency - Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 font-['Roboto'] text-gray-800">
+  <header class="bg-white shadow-md fixed w-full z-10">
+    <nav class="container mx-auto flex items-center justify-between p-4">
+      <a href="index.html" class="text-2xl font-bold text-blue-600">Brainees Travel</a>
+      <ul class="hidden md:flex space-x-6 text-lg">
+        <li><a href="index.html" class="hover:text-blue-500 transition">Home</a></li>
+        <li><a href="about.html" class="hover:text-blue-500 transition">About Us</a></li>
+        <li><a href="services.html" class="hover:text-blue-500 transition">Services</a></li>
+        <li><a href="gallery.html" class="hover:text-blue-500 transition">Gallery</a></li>
+        <li><a href="contact.html" class="hover:text-blue-500 transition">Contact Us</a></li>
+      </ul>
+      <div class="md:hidden">
+        <button id="menu-btn" class="text-gray-700 focus:outline-none">
+          <i class="fas fa-bars fa-lg"></i>
+        </button>
+      </div>
+    </nav>
+    <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md">
+      <ul class="flex flex-col p-4 space-y-2 text-lg">
+        <li><a href="index.html" class="block hover:text-blue-500 transition">Home</a></li>
+        <li><a href="about.html" class="block hover:text-blue-500 transition">About Us</a></li>
+        <li><a href="services.html" class="block hover:text-blue-500 transition">Services</a></li>
+        <li><a href="gallery.html" class="block hover:text-blue-500 transition">Gallery</a></li>
+        <li><a href="contact.html" class="block hover:text-blue-500 transition">Contact Us</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="pt-20">
+    <section class="bg-blue-600 text-white py-20">
+      <div class="container mx-auto text-center px-4">
+        <h1 class="text-4xl md:text-5xl font-extrabold mb-4">Explore the World with Brainees Travel Agency</h1>
+        <p class="text-lg md:text-xl max-w-3xl mx-auto mb-8">Your trusted partner for unforgettable travel experiences. Discover new destinations, enjoy seamless bookings, and create memories that last a lifetime.</p>
+        <a href="services.html" class="inline-block bg-white text-blue-600 font-semibold px-6 py-3 rounded shadow hover:bg-gray-100 transition">Our Services</a>
+      </div>
+    </section>
+
+    <section class="container mx-auto py-16 px-4">
+      <h2 class="text-3xl font-bold mb-8 text-center">Why Choose Brainees Travel?</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white rounded-lg shadow p-6 text-center hover:shadow-lg transition">
+          <i class="fas fa-globe-americas fa-3x text-blue-600 mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Global Destinations</h3>
+          <p>We offer travel packages to the most exciting destinations worldwide, tailored to your preferences.</p>
+        </div>
+        <div class="bg-white rounded-lg shadow p-6 text-center hover:shadow-lg transition">
+          <i class="fas fa-headset fa-3x text-blue-600 mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">24/7 Support</h3>
+          <p>Our dedicated support team is available around the clock to assist you with your travel needs.</p>
+        </div>
+        <div class="bg-white rounded-lg shadow p-6 text-center hover:shadow-lg transition">
+          <i class="fas fa-star fa-3x text-blue-600 mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Best Price Guarantee</h3>
+          <p>We ensure competitive pricing and exclusive deals to make your travel affordable and enjoyable.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-white shadow-inner py-6 mt-12">
+    <div class="container mx-auto text-center text-gray-600">
+      &copy; 2024 Brainees Travel Agency. All rights reserved.
+    </div>
+  </footer>
+
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
