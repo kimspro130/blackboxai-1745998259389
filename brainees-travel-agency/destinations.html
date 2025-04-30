@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Destinations - Brainees Travel Agency</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-lime-100 font-['Roboto'] text-gray-900 min-h-screen bg-[url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80')] bg-cover bg-center">
+  <header class="bg-white shadow-md fixed w-full z-10">
+    <nav class="container mx-auto flex items-center justify-between p-4">
+      <a href="index.html" class="text-3xl font-playfair text-lime-700 flex items-center space-x-2">
+        <i class="fas fa-plane-departure"></i>
+        <span>Brainees Travel</span>
+      </a>
+      <ul class="hidden md:flex space-x-6 text-lg font-semibold text-lime-800">
+        <li><a href="index.html" class="hover:text-lime-600 transition">Home</a></li>
+        <li><a href="about.html" class="hover:text-lime-600 transition">About Us</a></li>
+        <li><a href="services.html" class="hover:text-lime-600 transition">Services</a></li>
+        <li><a href="gallery.html" class="hover:text-lime-600 transition">Gallery</a></li>
+        <li><a href="destinations.html" class="hover:text-lime-600 transition font-semibold text-lime-700">Destinations</a></li>
+        <li><a href="contact.html" class="hover:text-lime-600 transition">Contact Us</a></li>
+      </ul>
+      <div class="md:hidden">
+        <button id="menu-btn" class="text-gray-700 focus:outline-none">
+          <i class="fas fa-bars fa-lg"></i>
+        </button>
+      </div>
+    </nav>
+    <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md">
+      <ul class="flex flex-col p-4 space-y-2 text-lg">
+        <li><a href="index.html" class="block hover:text-blue-500 transition">Home</a></li>
+        <li><a href="about.html" class="block hover:text-blue-500 transition">About Us</a></li>
+        <li><a href="services.html" class="block hover:text-blue-500 transition">Services</a></li>
+        <li><a href="gallery.html" class="block hover:text-blue-500 transition">Gallery</a></li>
+        <li><a href="destinations.html" class="block hover:text-blue-500 transition font-semibold text-blue-600">Destinations</a></li>
+        <li><a href="contact.html" class="block hover:text-blue-500 transition">Contact Us</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="pt-20 container mx-auto px-4 py-16 max-w-5xl">
+    <h1 class="text-5xl font-playfair mb-6 text-center text-lime-800">Travel Destinations</h1>
+    <p class="mb-8 text-center max-w-3xl mx-auto font-semibold">Explore some of the most beautiful and exciting places around the world, with a special focus on the diverse and stunning destinations in Uganda.</p>
+
+    <section class="mb-12">
+      <h2 class="text-3xl font-semibold mb-4 font-playfair">Featured Destinations in Uganda</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-lime-100 rounded-lg shadow p-4 hover:shadow-lg transition">
+          <img src="https://images.pexels.com/photos/460621/pexels-photo-460621.jpeg" alt="Bwindi Impenetrable Forest" class="w-full h-48 object-cover rounded mb-4" />
+          <h3 class="text-xl font-semibold mb-2 font-playfair">Bwindi Impenetrable Forest</h3>
+          <p>Home to the endangered mountain gorillas, this UNESCO World Heritage site offers unforgettable trekking experiences.</p>
+        </div>
+        <div class="bg-lime-100 rounded-lg shadow p-4 hover:shadow-lg transition">
+          <img src="https://images.pexels.com/photos/221457/pexels-photo-221457.jpeg" alt="Murchison Falls" class="w-full h-48 object-cover rounded mb-4" />
+          <h3 class="text-xl font-semibold mb-2 font-playfair">Murchison Falls National Park</h3>
+          <p>Witness the powerful waterfall where the Nile River squeezes through a narrow gorge, surrounded by abundant wildlife.</p>
+        </div>
+        <div class="bg-lime-100 rounded-lg shadow p-4 hover:shadow-lg transition">
+          <img src="https://images.pexels.com/photos/346885/pexels-photo-346885.jpeg" alt="Lake Bunyonyi" class="w-full h-48 object-cover rounded mb-4" />
+          <h3 class="text-xl font-semibold mb-2 font-playfair">Lake Bunyonyi</h3>
+          <p>A serene and picturesque lake known for its beautiful islands and birdwatching opportunities.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="text-3xl font-semibold mb-4 font-playfair">Popular Destinations Around the World</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-lime-100 rounded-lg shadow p-4 hover:shadow-lg transition">
+          <img src="https://images.pexels.com/photos/210186/pexels-photo-210186.jpeg" alt="Swiss Alps" class="w-full h-48 object-cover rounded mb-4" />
+          <h3 class="text-xl font-semibold mb-2 font-playfair">Swiss Alps, Switzerland</h3>
+          <p>Famous for its stunning mountain scenery, skiing, and charming alpine villages.</p>
+        </div>
+        <div class="bg-lime-100 rounded-lg shadow p-4 hover:shadow-lg transition">
+          <img src="https://images.pexels.com/photos/346885/pexels-photo-346885.jpeg" alt="Maldives" class="w-full h-48 object-cover rounded mb-4" />
+          <h3 class="text-xl font-semibold mb-2 font-playfair">Maldives</h3>
+          <p>Known for its crystal-clear waters, luxury resorts, and vibrant marine life.</p>
+        </div>
+        <div class="bg-lime-100 rounded-lg shadow p-4 hover:shadow-lg transition">
+          <img src="https://images.pexels.com/photos/221457/pexels-photo-221457.jpeg" alt="Sahara Desert" class="w-full h-48 object-cover rounded mb-4" />
+          <h3 class="text-xl font-semibold mb-2 font-playfair">Sahara Desert, Africa</h3>
+          <p>The largest hot desert in the world, offering unique desert landscapes and cultural experiences.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-white shadow-inner py-6 mt-12">
+    <div class="container mx-auto text-center text-gray-600">
+      &copy; 2024 Brainees Travel Agency. All rights reserved.
+    </div>
+  </footer>
+
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
