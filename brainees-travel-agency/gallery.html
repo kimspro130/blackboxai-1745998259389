@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gallery - Brainees Travel Agency</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 font-['Roboto'] text-gray-800">
+  <header class="bg-white shadow-md fixed w-full z-10">
+    <nav class="container mx-auto flex items-center justify-between p-4">
+      <a href="index.html" class="text-2xl font-bold text-blue-600">Brainees Travel</a>
+      <ul class="hidden md:flex space-x-6 text-lg">
+        <li><a href="index.html" class="hover:text-blue-500 transition">Home</a></li>
+        <li><a href="about.html" class="hover:text-blue-500 transition">About Us</a></li>
+        <li><a href="services.html" class="hover:text-blue-500 transition">Services</a></li>
+        <li><a href="gallery.html" class="hover:text-blue-500 transition font-semibold text-blue-600">Gallery</a></li>
+        <li><a href="contact.html" class="hover:text-blue-500 transition">Contact Us</a></li>
+      </ul>
+      <div class="md:hidden">
+        <button id="menu-btn" class="text-gray-700 focus:outline-none">
+          <i class="fas fa-bars fa-lg"></i>
+        </button>
+      </div>
+    </nav>
+    <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md">
+      <ul class="flex flex-col p-4 space-y-2 text-lg">
+        <li><a href="index.html" class="block hover:text-blue-500 transition">Home</a></li>
+        <li><a href="about.html" class="block hover:text-blue-500 transition">About Us</a></li>
+        <li><a href="services.html" class="block hover:text-blue-500 transition">Services</a></li>
+        <li><a href="gallery.html" class="block hover:text-blue-500 transition font-semibold text-blue-600">Gallery</a></li>
+        <li><a href="contact.html" class="block hover:text-blue-500 transition">Contact Us</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="pt-20 container mx-auto px-4 py-16">
+    <h1 class="text-4xl font-bold mb-6 text-center">Gallery</h1>
+    <p class="text-center mb-12 max-w-3xl mx-auto">Explore some of the breathtaking destinations and experiences we offer at Brainees Travel Agency.</p>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition">
+        <img src="https://images.pexels.com/photos/346885/pexels-photo-346885.jpeg" alt="Beach Destination" class="w-full h-64 object-cover" />
+      </div>
+      <div class="rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition">
+        <img src="https://images.pexels.com/photos/210186/pexels-photo-210186.jpeg" alt="Mountain Destination" class="w-full h-64 object-cover" />
+      </div>
+      <div class="rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition">
+        <video controls class="w-full h-64 object-cover">
+          <source src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition">
+        <img src="https://images.pexels.com/photos/460621/pexels-photo-460621.jpeg" alt="City Destination" class="w-full h-64 object-cover" />
+      </div>
+      <div class="rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition">
+        <img src="https://images.pexels.com/photos/221457/pexels-photo-221457.jpeg" alt="Desert Destination" class="w-full h-64 object-cover" />
+      </div>
+      <div class="rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition">
+        <video controls class="w-full h-64 object-cover">
+          <source src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-white shadow-inner py-6 mt-12">
+    <div class="container mx-auto text-center text-gray-600">
+      &copy; 2024 Brainees Travel Agency. All rights reserved.
+    </div>
+  </footer>
+
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
